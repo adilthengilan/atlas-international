@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ATLAS International</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-section { padding: 5rem 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+        .contact-info-card { background: var(--gray-light); padding: 2rem; border-radius: 10px; margin-bottom: 2rem; }
+        .contact-info-card h3 { color: var(--primary-color); margin-bottom: 1.5rem; }
+        .contact-item { display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem; }
+        .contact-icon { font-size: 1.5rem; color: var(--secondary-color); min-width: 30px; }
+        .contact-form { background: var(--text-light); padding: 3rem; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; color: var(--primary-color); font-weight: 600; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); border-radius: 5px; font-family: inherit; font-size: 1rem; transition: border-color 0.3s; }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--secondary-color); }
+        .form-group textarea { min-height: 150px; resize: vertical; }
+        .office-image { width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); margin-top: 2rem; }
+        @media (max-width: 968px) { .contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/atlas-logo.png" style="height: 50px;"></img>
+                    <!-- <h1>ATLAS</h1>
+                    <p class="logo-subtitle">International Transport & General Contracting</p> -->
+                </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="services.html">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services/dredging-reclamation.html">Dredging & Reclamation</a></li>
+                                <li><a href="services/marine-construction.html">Marine Construction</a></li>
+                                <li><a href="services/infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
+                                <li><a href="services/oil-gas-services.html">Oil & Gas Services</a></li>
+                                <li><a href="services/logistics-transportation.html">Logistics & Transportation</a></li>
+                                <li><a href="services/equipment-rental.html">Equipment Rental</a></li>
+                                <li><a href="services/landscaping-external.html">Landscaping & External Works</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="quote.html" class="btn-cta">Request a Quote</a>
+                </nav>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active" style="background-image: url('/placeholder.svg?height=1080&width=1920');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=1080&width=1920');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=1080&width=1920');">
+                <div class="hero-overlay"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Contact Us</h1>
+                <p class="hero-subtitle">Get in Touch with Our Team of Experts</p>
+            </div>
+        </div>
+        <button class="carousel-control prev" onclick="changeSlide(-1)">❮</button>
+        <button class="carousel-control next" onclick="changeSlide(1)">❯</button>
+        <div class="carousel-indicators"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">We're here to answer your questions</p>
+                    
+                    <div class="contact-info-card">
+                        <h3>Head Office</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <strong>Address</strong><br>
+                                Office Number 35 , Flat 6 , Corniche Building, Abudhabi
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Phone</strong><br>
+                                +971 50 445 3937
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <strong>Email</strong><br>
+                                info@atlas-international.ae
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <!-- <div>
+                                <strong>Business Hours</strong><br>
+                                Sunday - Thursday: 8:00 AM - 6:00 PM<br>
+                                Friday - Saturday: Closed
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <img src="/placeholder.svg?height=400&width=600" alt="ATLAS Office" class="office-image">
+                </div>
+
+                <div>
+                    <div class="contact-form">
+                        <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Send Us a Message</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Interest</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="dredging">Dredging & Reclamation</option>
+                                    <option value="marine">Marine Construction</option>
+                                    <option value="infrastructure">Infrastructure & Earthworks</option>
+                                    <option value="oilgas">Oil & Gas Services</option>
+                                    <option value="logistics">Logistics & Transportation</option>
+                                    <option value="equipment">Equipment Rental</option>
+                                    <option value="landscaping">Landscaping & External Works</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section section section-gray">
+        <div class="container">
+            <h2 class="section-title text-center">What Our Clients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"ATLAS International's responsiveness and professionalism from initial contact through project completion was outstanding. They truly understand client needs and deliver accordingly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Client">
+                        <div>
+                            <h4>Omar Al Zaabi</h4>
+                            <p>Procurement Manager, UAE Government Entity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with ATLAS has been a pleasure. Their team is knowledgeable, accessible, and always ready to provide solutions to complex challenges."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Client">
+                        <div>
+                            <h4>David Chen</h4>
+                            <p>Engineering Director, International Contractors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev" onclick="changeTestimonial(-1)">❮</button>
+                <button class="testimonial-next" onclick="changeTestimonial(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="gallery-preview section">
+        <div class="container">
+            <h2 class="section-title text-center">Our Project Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Gallery">
+                    <div class="gallery-overlay">
+                        <span>Major Projects</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Gallery">
+                    <div class="gallery-overlay">
+                        <span>Marine Works</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Gallery">
+                    <div class="gallery-overlay">
+                        <span>Equipment Fleet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ATLAS International</h3>
+                    <p>Leading provider of marine construction, dredging, oil & gas, and infrastructure solutions in the UAE.</p>
+                    <div class="certifications">
+                        <img src="/placeholder.svg?height=60&width=80" alt="ISO 9001">
+                        <img src="/placeholder.svg?height=60&width=80" alt="ISO 14001">
+                        <img src="/placeholder.svg?height=60&width=80" alt="ISO 45001">
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services/dredging-reclamation.html">Dredging & Reclamation</a></li>
+                        <li><a href="services/marine-construction.html">Marine Construction</a></li>
+                        <li><a href="services/infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
+                        <li><a href="services/oil-gas-services.html">Oil & Gas Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📍 Office Number 35, Flat 6 , Corniche Building, Abudhabi</li>
+                        <li>📞 +971 50 445 3937</li>
+                        <li>✉️ info@atlas-international.ae</li>
+                        <!-- <li>🕐 Sun-Thu: 8AM - 6PM</li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ATLAS International Transport & General Contracting L.L.C – S.PC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-prev" onclick="changeLightboxImage(-1)">❮</button>
+        <button class="lightbox-next" onclick="changeLightboxImage(1)">❯</button>
+        <img id="lightbox-image" src="/placeholder.svg" alt="Gallery Image">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
