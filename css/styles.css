@@ -154,6 +154,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+
 }
 
 .mobile-menu-toggle span {
@@ -1323,6 +1324,7 @@ body {
 }
 
 @media (max-width: 640px) {
+  /* HERO */
   .hero-title {
     font-size: 2rem;
   }
@@ -1335,10 +1337,12 @@ body {
     flex-direction: column;
   }
 
+  /* SECTION */
   .section-title {
     font-size: 1.75rem;
   }
 
+  /* LIGHTBOX */
   .lightbox-prev,
   .lightbox-next {
     padding: 0.5rem 1rem;
@@ -1353,7 +1357,37 @@ body {
     right: 0.5rem;
   }
 
+  /* FOOTER */
   .footer-grid {
     grid-template-columns: 1fr;
   }
+
+  /* ==========================
+     MOBILE MENU BACKGROUND
+  ========================== */
+
+  /* Nav container */
+  .nav {
+    background-color: #ffffff;
+  }
+
+  /* Dropdown / menu list */
+  .nav-menu {
+    background-color: #ffffff;
+  }
+
+  /* When mobile menu is opened (recommended) */
+  .nav-menu.active {
+    background-color: #ffffff;
+  }
+
+  /* Optional: glass effect */
+  /* /* */
+  .nav-menu a{
+    /* background: rgba(0, 0, 0, 0.85); */
+      color: var(--text-dark);
+
+    backdrop-filter: blur(10px);
+  }
+  
 }
