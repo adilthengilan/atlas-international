@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oil & Gas Services - ATLAS International</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -12,24 +12,22 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="./images/atlas-logo.png" style="height: 50px;"></img>
-                    <!-- <h1>ATLAS</h1>
-                    <p class="logo-subtitle">International Transport & General Contracting</p> -->
+                    <img src="./images/atlas-logo.png" style="height: 50px;" alt="ATLAS Logo">
                 </div>
                 <nav class="nav">
                     <ul class="nav-menu">
-                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li class="dropdown">
                             <a href="./services.html">Services</a>
                             <ul class="dropdown-menu">
                                 <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
                                 <li><a href="./marine-construction.html">Marine Construction</a></li>
-                                <li><a href="./infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
+                                <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
                                 <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                                 <li><a href="./logistics-transportation.html">Logistics & Transportation</a></li>
                                 <li><a href="./equipment-rental.html">Equipment Rental</a></li>
-                                <li><a href="./landscaping-external.html">Landscaping & External Works</a></li>
+                                <li><a href="./landscaping.html">Landscaping & External Works</a></li>
                             </ul>
                         </li>
                         <li><a href="./gallery.html">Gallery</a></li>
@@ -47,33 +45,41 @@
         </div>
     </header>
 
-
-    <!-- Hero Section with Background Carousel -->
-    <section class="hero-carousel">
-        <div class="carousel-track">
-            <div class="carousel-slide active" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active" style="background-image: url('/placeholder.svg?height=800&width=1600');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=800&width=1600');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=800&width=1600');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=800&width=1600');"></div>
         </div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Oil & Gas Services</h1>
-            <p>Comprehensive support for offshore and onshore oil & gas operations</p>
+        <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
         </div>
-        <div class="carousel-controls">
-            <button class="carousel-btn prev">‹</button>
-            <button class="carousel-btn next">›</button>
+        <div class="container hero-content">
+            <div>
+                <h1 class="hero-title">Oil & Gas Services</h1>
+                <p class="hero-subtitle">Comprehensive support for offshore and onshore oil & gas operations</p>
+                <div class="hero-buttons">
+                    <a href="./quote.html" class="btn btn-primary">Request Quote</a>
+                    <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
         </div>
-        <div class="carousel-indicators"></div>
     </section>
 
     <!-- Service Overview -->
     <section class="section">
         <div class="container">
-            <div class="split-content">
-                <div class="split-text">
-                    <h2>Oil & Gas Industry Excellence</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">Oil & Gas Industry Excellence</h2>
                     <p>ATLAS International provides comprehensive support services to the oil and gas sector throughout the UAE and wider Middle East region. Our expertise spans offshore platform support, pipeline construction, facility maintenance, and logistics solutions for both exploration and production operations.</p>
                     <p>With decades of combined experience and a deep understanding of the stringent safety and regulatory requirements of the oil and gas industry, we deliver reliable, efficient, and compliant services that keep operations running smoothly.</p>
                     <ul class="feature-list">
@@ -85,7 +91,7 @@
                         <li>HSE compliance and safety management</li>
                     </ul>
                 </div>
-                <div class="split-image">
+                <div class="about-image">
                     <img src="/placeholder.svg?height=500&width=600" alt="Oil & Gas Operations">
                 </div>
             </div>
@@ -93,90 +99,128 @@
     </section>
 
     <!-- Services Grid -->
-    <section class="section bg-light">
+    <section class="section section-gray">
         <div class="container">
-            <h2 class="section-title">Our Oil & Gas Capabilities</h2>
+            <div class="text-center">
+                <h2 class="section-title">Our Oil & Gas Capabilities</h2>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Offshore Support">
-                    <h3>Offshore Platform Support</h3>
-                    <p>Complete support services for offshore installations including maintenance, modifications, hookup and commissioning, and decommissioning operations.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Offshore Support">
+                    </div>
+                    <div class="service-content">
+                        <h3>Offshore Platform Support</h3>
+                        <p>Complete support services for offshore installations including maintenance, modifications, hookup and commissioning, and decommissioning operations.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Pipeline Services">
-                    <h3>Pipeline Construction</h3>
-                    <p>Expert pipeline installation, testing, and commissioning services for subsea, onshore, and offshore pipeline systems with full integrity management.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Pipeline Services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Pipeline Construction</h3>
+                        <p>Expert pipeline installation, testing, and commissioning services for subsea, onshore, and offshore pipeline systems with full integrity management.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Facility Construction">
-                    <h3>Facility Development</h3>
-                    <p>Construction and modification of oil and gas processing facilities, storage terminals, pump stations, and associated infrastructure.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Facility Construction">
+                    </div>
+                    <div class="service-content">
+                        <h3>Facility Development</h3>
+                        <p>Construction and modification of oil and gas processing facilities, storage terminals, pump stations, and associated infrastructure.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Marine Logistics">
-                    <h3>Marine Logistics</h3>
-                    <p>Dedicated supply vessel operations, crew transfer, equipment mobilization, and logistics support for offshore installations.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Marine Logistics">
+                    </div>
+                    <div class="service-content">
+                        <h3>Marine Logistics</h3>
+                        <p>Dedicated supply vessel operations, crew transfer, equipment mobilization, and logistics support for offshore installations.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Emergency Response">
-                    <h3>Emergency Response</h3>
-                    <p>Rapid emergency response services including oil spill containment, environmental protection, and crisis management support.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Emergency Response">
+                    </div>
+                    <div class="service-content">
+                        <h3>Emergency Response</h3>
+                        <p>Rapid emergency response services including oil spill containment, environmental protection, and crisis management support.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="HSE Management">
-                    <h3>HSE & Safety</h3>
-                    <p>Comprehensive health, safety, and environmental management systems ensuring compliance with international oil and gas industry standards.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="HSE Management">
+                    </div>
+                    <div class="service-content">
+                        <h3>HSE & Safety</h3>
+                        <p>Comprehensive health, safety, and environmental management systems ensuring compliance with international oil and gas industry standards.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mid-Page Image Carousel -->
-    <section class="image-carousel-section">
+    <!-- Operations Carousel -->
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Our Oil & Gas Operations</h2>
-            <div class="image-carousel">
-                <div class="carousel-track">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Offshore Operations" class="active">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Pipeline Work">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Facility Operations">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Marine Support">
+            <div class="text-center">
+                <h2 class="section-title">Our Oil & Gas Operations</h2>
+            </div>
+            <div class="ops-slider">
+                <div class="ops-slide active">
+                    <img src="/placeholder.svg?height=600&width=1000" alt="Offshore Operations">
+                    <div class="ops-caption">Offshore Operations</div>
                 </div>
-                <div class="carousel-controls">
-                    <button class="carousel-btn prev">‹</button>
-                    <button class="carousel-btn next">›</button>
+                <div class="ops-slide">
+                    <img src="/placeholder.svg?height=600&width=1000" alt="Pipeline Work">
+                    <div class="ops-caption">Pipeline Installation</div>
+                </div>
+                <div class="ops-slide">
+                    <img src="/placeholder.svg?height=600&width=1000" alt="Facility Operations">
+                    <div class="ops-caption">Facility Operations</div>
+                </div>
+                <div class="ops-slide">
+                    <img src="/placeholder.svg?height=600&width=1000" alt="Marine Support">
+                    <div class="ops-caption">Marine Support Services</div>
                 </div>
             </div>
+            <button class="ops-prev">&lt;</button>
+            <button class="ops-next">&gt;</button>
         </div>
     </section>
 
     <!-- Methodology -->
-    <section class="section">
+    <section class="section section-gray">
         <div class="container">
-            <h2 class="section-title">Our Approach to Oil & Gas Projects</h2>
+            <div class="text-center">
+                <h2 class="section-title">Our Approach to Oil & Gas Projects</h2>
+            </div>
             <div class="methodology-grid">
-                <div class="method-step">
-                    <div class="step-number">01</div>
-                    <h3>Safety Assessment</h3>
+                <div class="methodology-card">
+                    <div class="method-number">1</div>
                     <img src="/placeholder.svg?height=200&width=300" alt="Safety Assessment">
+                    <h3>Safety Assessment</h3>
                     <p>Comprehensive risk assessment and safety planning aligned with international oil and gas industry standards including IOGP and API guidelines.</p>
                 </div>
-                <div class="method-step">
-                    <div class="step-number">02</div>
-                    <h3>Engineering & Planning</h3>
+                <div class="methodology-card">
+                    <div class="method-number">2</div>
                     <img src="/placeholder.svg?height=200&width=300" alt="Engineering">
+                    <h3>Engineering & Planning</h3>
                     <p>Detailed engineering design, procurement planning, and project scheduling with focus on minimizing operational downtime.</p>
                 </div>
-                <div class="method-step">
-                    <div class="step-number">03</div>
-                    <h3>Execution & Monitoring</h3>
+                <div class="methodology-card">
+                    <div class="method-number">3</div>
                     <img src="/placeholder.svg?height=200&width=300" alt="Execution">
+                    <h3>Execution & Monitoring</h3>
                     <p>Controlled execution with continuous monitoring, quality assurance, and adherence to HSE protocols throughout the project lifecycle.</p>
                 </div>
-                <div class="method-step">
-                    <div class="step-number">04</div>
-                    <h3>Commissioning & Handover</h3>
+                <div class="methodology-card">
+                    <div class="method-number">4</div>
                     <img src="/placeholder.svg?height=200&width=300" alt="Commissioning">
+                    <h3>Commissioning & Handover</h3>
                     <p>Systematic commissioning, testing, and certification ensuring full operational readiness and compliance before handover.</p>
                 </div>
             </div>
@@ -184,32 +228,36 @@
     </section>
 
     <!-- Safety & Compliance -->
-    <section class="section bg-light">
+    <section class="section">
         <div class="container">
-            <div class="split-content reverse">
-                <div class="split-text">
-                    <h2>Safety & Environmental Compliance</h2>
+            <div class="safety-grid">
+                <div class="safety-content">
+                    <h2 class="section-title">Safety & Environmental Compliance</h2>
                     <p>In the oil and gas industry, safety and environmental protection are paramount. ATLAS International maintains the highest standards of HSE management, with comprehensive systems and procedures that meet or exceed international requirements.</p>
-                    <div class="compliance-badges">
-                        <div class="badge-item">
+                    <div class="certifications-grid">
+                        <div class="cert-card">
                             <img src="/placeholder.svg?height=80&width=80" alt="ISO 45001">
-                            <p>ISO 45001 Certified</p>
+                            <h3>ISO 45001</h3>
+                            <p>Certified</p>
                         </div>
-                        <div class="badge-item">
+                        <div class="cert-card">
                             <img src="/placeholder.svg?height=80&width=80" alt="ISO 14001">
-                            <p>ISO 14001 Certified</p>
+                            <h3>ISO 14001</h3>
+                            <p>Certified</p>
                         </div>
-                        <div class="badge-item">
+                        <div class="cert-card">
                             <img src="/placeholder.svg?height=80&width=80" alt="IOGP Standards">
-                            <p>IOGP Compliant</p>
+                            <h3>IOGP</h3>
+                            <p>Compliant</p>
                         </div>
-                        <div class="badge-item">
+                        <div class="cert-card">
                             <img src="/placeholder.svg?height=80&width=80" alt="API Standards">
-                            <p>API Standards</p>
+                            <h3>API</h3>
+                            <p>Standards</p>
                         </div>
                     </div>
                 </div>
-                <div class="split-image">
+                <div class="safety-image">
                     <img src="/placeholder.svg?height=500&width=600" alt="Safety Compliance">
                 </div>
             </div>
@@ -217,50 +265,46 @@
     </section>
 
     <!-- Project Gallery -->
-    <section class="section">
+    <section class="section section-gray">
         <div class="container">
-            <h2 class="section-title">Oil & Gas Project Gallery</h2>
+            <div class="text-center">
+                <h2 class="section-title">Oil & Gas Project Gallery</h2>
+            </div>
             <div class="gallery-grid">
-                <div class="gallery-item" data-category="oil-gas">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Platform Construction">
                     <div class="gallery-overlay">
-                        <h3>Platform Installation</h3>
-                        <p>Offshore UAE</p>
+                        <span>Platform Installation<br>Offshore UAE</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="oil-gas">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Pipeline Installation">
                     <div class="gallery-overlay">
-                        <h3>Subsea Pipeline</h3>
-                        <p>Abu Dhabi</p>
+                        <span>Subsea Pipeline<br>Abu Dhabi</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="oil-gas">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Storage Terminal">
                     <div class="gallery-overlay">
-                        <h3>Storage Terminal</h3>
-                        <p>Dubai</p>
+                        <span>Storage Terminal<br>Dubai</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="oil-gas">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Platform Maintenance">
                     <div class="gallery-overlay">
-                        <h3>Platform Maintenance</h3>
-                        <p>Offshore Project</p>
+                        <span>Platform Maintenance<br>Offshore Project</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="oil-gas">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Processing Facility">
                     <div class="gallery-overlay">
-                        <h3>Processing Facility</h3>
-                        <p>Sharjah</p>
+                        <span>Processing Facility<br>Sharjah</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="oil-gas">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Marine Support">
                     <div class="gallery-overlay">
-                        <h3>Marine Support Operations</h3>
-                        <p>UAE Waters</p>
+                        <span>Marine Support Operations<br>UAE Waters</span>
                     </div>
                 </div>
             </div>
@@ -268,40 +312,65 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="section bg-light">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Client Testimonials</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial-track">
-                    <div class="testimonial-card active">
-                        <div class="testimonial-image">
-                            <img src="/placeholder.svg?height=80&width=80" alt="Client">
-                        </div>
-                        <p class="testimonial-text">"ATLAS International's expertise in offshore support services has been invaluable to our operations. Their commitment to safety and operational excellence is outstanding."</p>
-                        <h4>Mohammed Al-Hashimi</h4>
-                        <p class="testimonial-role">Operations Manager, Major Oil Company</p>
+            <div class="text-center">
+                <h2 class="section-title">Client Testimonials</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"ATLAS International's expertise in offshore support services has been invaluable to our operations. Their commitment to safety and operational excellence is outstanding."</p>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-image">
-                            <img src="/placeholder.svg?height=80&width=80" alt="Client">
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Mohammed Al-Hashimi">
+                        <div>
+                            <h4>Mohammed Al-Hashimi</h4>
+                            <p>Operations Manager, Major Oil Company</p>
                         </div>
-                        <p class="testimonial-text">"The pipeline installation project was completed ahead of schedule with zero safety incidents. ATLAS demonstrated exceptional technical capability and project management."</p>
-                        <h4>Sarah Williams</h4>
-                        <p class="testimonial-role">Project Director, International Energy Firm</p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-image">
-                            <img src="/placeholder.svg?height=80&width=80" alt="Client">
-                        </div>
-                        <p class="testimonial-text">"Their emergency response capabilities and marine logistics support have been crucial to maintaining our operational continuity in challenging offshore environments."</p>
-                        <h4>Ahmed Al-Mansoori</h4>
-                        <p class="testimonial-role">HSE Director, National Oil Corporation</p>
                     </div>
                 </div>
-                <div class="testimonial-controls">
-                    <button class="testimonial-btn prev">‹</button>
-                    <button class="testimonial-btn next">›</button>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The pipeline installation project was completed ahead of schedule with zero safety incidents. ATLAS demonstrated exceptional technical capability and project management."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Sarah Williams">
+                        <div>
+                            <h4>Sarah Williams</h4>
+                            <p>Project Director, International Energy Firm</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Their emergency response capabilities and marine logistics support have been crucial to maintaining our operational continuity in challenging offshore environments."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Ahmed Al-Mansoori">
+                        <div>
+                            <h4>Ahmed Al-Mansoori</h4>
+                            <p>HSE Director, National Oil Corporation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev">&lt;</button>
+                <button class="testimonial-next">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner" style="background-image: url('/placeholder.svg?height=400&width=1600');">
+        <div class="hero-overlay"></div>
+        <div class="container cta-content">
+            <h2>Partner with Us for Your Oil & Gas Projects</h2>
+            <p>Reliable, safe, and compliant services for the energy sector</p>
+            <div class="hero-buttons">
+                <a href="./quote.html" class="btn-cta-large">Request Quote</a>
+                <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
             </div>
         </div>
     </section>
@@ -309,44 +378,34 @@
     <!-- Related Services -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Related Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Marine Construction">
+            <div class="text-center">
+                <h2 class="section-title">Related Services</h2>
+            </div>
+            <div class="related-services-grid">
+                <div class="related-service-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Marine Construction">
                     <h3>Marine Construction</h3>
                     <p>Specialized marine construction services for offshore and coastal infrastructure development.</p>
-                    <a href="marine-construction.html" class="btn btn-secondary">Learn More</a>
+                    <a href="./marine-construction.html" class="btn-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Logistics">
+                <div class="related-service-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Logistics">
                     <h3>Logistics & Transportation</h3>
                     <p>Comprehensive logistics solutions for equipment and material transportation to offshore and remote locations.</p>
-                    <a href="logistics-transportation.html" class="btn btn-secondary">Learn More</a>
+                    <a href="./logistics-transportation.html" class="btn-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Equipment Rental">
+                <div class="related-service-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Equipment Rental">
                     <h3>Equipment Rental</h3>
                     <p>Modern fleet of specialized equipment available for oil and gas construction and maintenance projects.</p>
-                    <a href="equipment-rental.html" class="btn btn-secondary">Learn More</a>
+                    <a href="./equipment-rental.html" class="btn-link">Learn More →</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section" style="background-image: url('/placeholder.svg?height=400&width=1600')">
-        <div class="cta-overlay"></div>
-        <div class="container">
-            <div class="cta-content">
-                <h2>Partner with Us for Your Oil & Gas Projects</h2>
-                <p>Reliable, safe, and compliant services for the energy sector</p>
-                <a href="../quote.html" class="btn btn-primary">Request a Quote</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-   <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -361,29 +420,28 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services/dredging-reclamation.html">Dredging & Reclamation</a></li>
-                        <li><a href="services/marine-construction.html">Marine Construction</a></li>
-                        <li><a href="services/infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
-                        <li><a href="services/oil-gas-services.html">Oil & Gas Services</a></li>
+                        <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
+                        <li><a href="./marine-construction.html">Marine Construction</a></li>
+                        <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
+                        <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Info</h4>
                     <ul class="contact-info">
-                        <li>📍 Office Number 35, Flat 6 , Corniche Building, Abudhabi</li>
+                        <li>📍 Office Number 35, Flat 6, Corniche Building, Abudhabi</li>
                         <li>📞 +971 50 445 3937</li>
                         <li>✉️ info@atlas-international.ae</li>
-                        <!-- <li>🕐 Sun-Thu: 8AM - 6PM</li> -->
                     </ul>
                 </div>
             </div>
@@ -393,14 +451,14 @@
         </div>
     </footer>
 
-
     <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div class="lightbox-caption" id="lightbox-caption"></div>
+    <div class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">&lt;</button>
+        <button class="lightbox-next">&gt;</button>
+        <img src="" alt="Lightbox Image">
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

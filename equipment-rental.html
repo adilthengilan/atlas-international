@@ -4,32 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipment Rental - ATLAS International</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Navigation -->
-     <header class="header">
+    <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="./images/atlas-logo.png" style="height: 50px;"></img>
-                    <!-- <h1>ATLAS</h1>
-                    <p class="logo-subtitle">International Transport & General Contracting</p> -->
+                    <img src="./images/atlas-logo.png" style="height: 50px;" alt="ATLAS Logo">
                 </div>
                 <nav class="nav">
                     <ul class="nav-menu">
-                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li class="dropdown">
                             <a href="./services.html">Services</a>
                             <ul class="dropdown-menu">
                                 <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
                                 <li><a href="./marine-construction.html">Marine Construction</a></li>
-                                <li><a href="./infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
+                                <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
                                 <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                                 <li><a href="./logistics-transportation.html">Logistics & Transportation</a></li>
                                 <li><a href="./equipment-rental.html">Equipment Rental</a></li>
-                                <li><a href="./landscaping-external.html">Landscaping & External Works</a></li>
+                                <li><a href="./landscaping.html">Landscaping & External Works</a></li>
                             </ul>
                         </li>
                         <li><a href="./gallery.html">Gallery</a></li>
@@ -47,33 +45,41 @@
         </div>
     </header>
 
-
-    <!-- Hero Section with Background Carousel -->
-    <section class="hero-carousel">
-        <div class="carousel-track">
-            <div class="carousel-slide active" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=800&width=1600')"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active" style="background-image: url('/placeholder.svg?height=800&width=1600');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=800&width=1600');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=800&width=1600');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=800&width=1600');"></div>
         </div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Equipment Rental Services</h1>
-            <p>Modern fleet of construction and marine equipment for any project</p>
+        <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
         </div>
-        <div class="carousel-controls">
-            <button class="carousel-btn prev">‹</button>
-            <button class="carousel-btn next">›</button>
+        <div class="container hero-content">
+            <div>
+                <h1 class="hero-title">Equipment Rental Services</h1>
+                <p class="hero-subtitle">Modern fleet of construction and marine equipment for any project</p>
+                <div class="hero-buttons">
+                    <a href="./quote.html" class="btn btn-primary">Request Quote</a>
+                    <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
         </div>
-        <div class="carousel-indicators"></div>
     </section>
 
     <!-- Service Overview -->
     <section class="section">
         <div class="container">
-            <div class="split-content">
-                <div class="split-text">
-                    <h2>Comprehensive Equipment Solutions</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">Comprehensive Equipment Solutions</h2>
                     <p>ATLAS International maintains one of the most extensive and modern equipment fleets in the UAE, providing reliable rental solutions for construction, marine, infrastructure, and oil & gas projects. Our well-maintained fleet ensures your operations continue smoothly with minimal downtime.</p>
                     <p>All equipment is regularly serviced, fully certified, and operated by experienced professionals. We offer flexible rental terms from daily to long-term contracts, with comprehensive maintenance and technical support included.</p>
                     <ul class="feature-list">
@@ -85,7 +91,7 @@
                         <li>Full maintenance and operator services</li>
                     </ul>
                 </div>
-                <div class="split-image">
+                <div class="about-image">
                     <img src="/placeholder.svg?height=500&width=600" alt="Equipment Fleet">
                 </div>
             </div>
@@ -93,39 +99,65 @@
     </section>
 
     <!-- Equipment Categories -->
-    <section class="section bg-light">
+    <section class="section section-gray">
         <div class="container">
-            <h2 class="section-title">Our Equipment Fleet</h2>
+            <div class="text-center">
+                <h2 class="section-title">Our Equipment Fleet</h2>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Excavators">
-                    <h3>Excavators & Earthmoving</h3>
-                    <p>Complete range of excavators from 5-ton mini excavators to 80-ton heavy-duty machines for all excavation needs.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Excavators">
+                    </div>
+                    <div class="service-content">
+                        <h3>Excavators & Earthmoving</h3>
+                        <p>Complete range of excavators from 5-ton mini excavators to 80-ton heavy-duty machines for all excavation needs.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Cranes">
-                    <h3>Cranes & Lifting Equipment</h3>
-                    <p>Mobile cranes, tower cranes, and specialized lifting equipment with capacities from 25 to 500 tons.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Cranes">
+                    </div>
+                    <div class="service-content">
+                        <h3>Cranes & Lifting Equipment</h3>
+                        <p>Mobile cranes, tower cranes, and specialized lifting equipment with capacities from 25 to 500 tons.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Bulldozers">
-                    <h3>Bulldozers & Graders</h3>
-                    <p>Heavy-duty bulldozers and motor graders for land clearing, grading, and earthwork operations.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Bulldozers">
+                    </div>
+                    <div class="service-content">
+                        <h3>Bulldozers & Graders</h3>
+                        <p>Heavy-duty bulldozers and motor graders for land clearing, grading, and earthwork operations.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Dredgers">
-                    <h3>Dredgers & Marine Equipment</h3>
-                    <p>Cutter suction dredgers, trailing suction hopper dredgers, and specialized marine construction equipment.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Dredgers">
+                    </div>
+                    <div class="service-content">
+                        <h3>Dredgers & Marine Equipment</h3>
+                        <p>Cutter suction dredgers, trailing suction hopper dredgers, and specialized marine construction equipment.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Barges">
-                    <h3>Barges & Marine Vessels</h3>
-                    <p>Cargo barges, flat-top barges, spud barges, and support vessels for marine operations.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Barges">
+                    </div>
+                    <div class="service-content">
+                        <h3>Barges & Marine Vessels</h3>
+                        <p>Cargo barges, flat-top barges, spud barges, and support vessels for marine operations.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=250&width=400" alt="Support Equipment">
-                    <h3>Generators & Support Equipment</h3>
-                    <p>Industrial generators, air compressors, pumps, and auxiliary equipment for continuous operations.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Support Equipment">
+                    </div>
+                    <div class="service-content">
+                        <h3>Generators & Support Equipment</h3>
+                        <p>Industrial generators, air compressors, pumps, and auxiliary equipment for continuous operations.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,110 +166,116 @@
     <!-- Featured Equipment Showcase -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Featured Equipment</h2>
-            <div class="equipment-showcase">
-                <div class="equipment-item">
-                    <img src="/placeholder.svg?height=350&width=500" alt="Heavy Excavator">
-                    <div class="equipment-details">
-                        <h3>Heavy Duty Excavators</h3>
-                        <p class="equipment-specs">40-80 Ton Capacity</p>
-                        <ul>
-                            <li>Caterpillar 390 & 385 Series</li>
-                            <li>Komatsu PC800 Series</li>
-                            <li>GPS-guided operation</li>
-                            <li>Multiple bucket configurations</li>
-                        </ul>
-                    </div>
+            <div class="text-center">
+                <h2 class="section-title">Featured Equipment</h2>
+            </div>
+            <div class="service-types-grid">
+                <div class="service-type-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Heavy Excavator">
+                    <h3>Heavy Duty Excavators</h3>
+                    <p style="font-weight: bold; color: var(--secondary-color); padding: 0 1.5rem;">40-80 Ton Capacity</p>
+                    <ul class="service-features" style="padding: 0 1.5rem 1.5rem;">
+                        <li>Caterpillar 390 & 385 Series</li>
+                        <li>Komatsu PC800 Series</li>
+                        <li>GPS-guided operation</li>
+                        <li>Multiple bucket configurations</li>
+                    </ul>
                 </div>
-                <div class="equipment-item">
-                    <img src="/placeholder.svg?height=350&width=500" alt="Mobile Crane">
-                    <div class="equipment-details">
-                        <h3>Mobile Cranes</h3>
-                        <p class="equipment-specs">100-500 Ton Capacity</p>
-                        <ul>
-                            <li>Liebherr LTM Series</li>
-                            <li>Tadano ATF Series</li>
-                            <li>All-terrain capabilities</li>
-                            <li>Certified operators included</li>
-                        </ul>
-                    </div>
+                <div class="service-type-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Mobile Crane">
+                    <h3>Mobile Cranes</h3>
+                    <p style="font-weight: bold; color: var(--secondary-color); padding: 0 1.5rem;">100-500 Ton Capacity</p>
+                    <ul class="service-features" style="padding: 0 1.5rem 1.5rem;">
+                        <li>Liebherr LTM Series</li>
+                        <li>Tadano ATF Series</li>
+                        <li>All-terrain capabilities</li>
+                        <li>Certified operators included</li>
+                    </ul>
                 </div>
-                <div class="equipment-item">
-                    <img src="/placeholder.svg?height=350&width=500" alt="Dredger">
-                    <div class="equipment-details">
-                        <h3>Cutter Suction Dredgers</h3>
-                        <p class="equipment-specs">2000-5000 m³/hr</p>
-                        <ul>
-                            <li>24" to 36" discharge diameter</li>
-                            <li>Up to 20m dredging depth</li>
-                            <li>GPS positioning systems</li>
-                            <li>Full crew and maintenance</li>
-                        </ul>
-                    </div>
+                <div class="service-type-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Dredger">
+                    <h3>Cutter Suction Dredgers</h3>
+                    <p style="font-weight: bold; color: var(--secondary-color); padding: 0 1.5rem;">2000-5000 m³/hr</p>
+                    <ul class="service-features" style="padding: 0 1.5rem 1.5rem;">
+                        <li>24" to 36" discharge diameter</li>
+                        <li>Up to 20m dredging depth</li>
+                        <li>GPS positioning systems</li>
+                        <li>Full crew and maintenance</li>
+                    </ul>
                 </div>
-                <div class="equipment-item">
-                    <img src="/placeholder.svg?height=350&width=500" alt="Bulldozer">
-                    <div class="equipment-details">
-                        <h3>Heavy Bulldozers</h3>
-                        <p class="equipment-specs">300-850 HP</p>
-                        <ul>
-                            <li>Caterpillar D9-D11 Series</li>
-                            <li>Komatsu D375-D475 Series</li>
-                            <li>U-blade and S-blade options</li>
-                            <li>GPS grading systems</li>
-                        </ul>
-                    </div>
+                <div class="service-type-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Bulldozer">
+                    <h3>Heavy Bulldozers</h3>
+                    <p style="font-weight: bold; color: var(--secondary-color); padding: 0 1.5rem;">300-850 HP</p>
+                    <ul class="service-features" style="padding: 0 1.5rem 1.5rem;">
+                        <li>Caterpillar D9-D11 Series</li>
+                        <li>Komatsu D375-D475 Series</li>
+                        <li>U-blade and S-blade options</li>
+                        <li>GPS grading systems</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mid-Page Image Carousel -->
-    <section class="image-carousel-section">
+    <!-- Operations Carousel -->
+    <section class="section section-gray">
         <div class="container">
-            <h2 class="section-title">Equipment in Action</h2>
-            <div class="image-carousel">
-                <div class="carousel-track">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Excavator Work" class="active">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Crane Operations">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Dredging Work">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Bulldozer Work">
+            <div class="text-center">
+                <h2 class="section-title">Equipment in Action</h2>
+            </div>
+            <div class="ops-slider">
+                <div class="ops-slide active">
+                    <img src="/placeholder.svg?height=600&width=1000" alt="Excavator Work">
+                    <div class="ops-caption">Excavator Operations</div>
                 </div>
-                <div class="carousel-controls">
-                    <button class="carousel-btn prev">‹</button>
-                    <button class="carousel-btn next">›</button>
+                <div class="ops-slide">
+                    <img src="/placeholder.svg?height=600&width=1000" alt="Crane Operations">
+                    <div class="ops-caption">Crane Lifting Operations</div>
+                </div>
+                <div class="ops-slide">
+                    <img src="/placeholder.svg?height=600&width=1000" alt="Dredging Work">
+                    <div class="ops-caption">Dredging Operations</div>
+                </div>
+                <div class="ops-slide">
+                    <img src="/placeholder.svg?height=600&width=1000" alt="Bulldozer Work">
+                    <div class="ops-caption">Bulldozer Earthworks</div>
                 </div>
             </div>
+            <button class="ops-prev">&lt;</button>
+            <button class="ops-next">&gt;</button>
         </div>
     </section>
 
     <!-- Rental Process -->
-    <section class="section bg-light">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Our Rental Process</h2>
+            <div class="text-center">
+                <h2 class="section-title">Our Rental Process</h2>
+            </div>
             <div class="methodology-grid">
-                <div class="method-step">
-                    <div class="step-number">01</div>
-                    <h3>Equipment Selection</h3>
+                <div class="methodology-card">
+                    <div class="method-number">1</div>
                     <img src="/placeholder.svg?height=200&width=300" alt="Selection">
+                    <h3>Equipment Selection</h3>
                     <p>Expert consultation to determine the right equipment for your specific project requirements and site conditions.</p>
                 </div>
-                <div class="method-step">
-                    <div class="step-number">02</div>
-                    <h3>Delivery & Setup</h3>
+                <div class="methodology-card">
+                    <div class="method-number">2</div>
                     <img src="/placeholder.svg?height=200&width=300" alt="Delivery">
+                    <h3>Delivery & Setup</h3>
                     <p>Timely delivery to your site with complete setup, safety briefing, and operational demonstration.</p>
                 </div>
-                <div class="method-step">
-                    <div class="step-number">03</div>
-                    <h3>Operation & Support</h3>
+                <div class="methodology-card">
+                    <div class="method-number">3</div>
                     <img src="/placeholder.svg?height=200&width=300" alt="Operation">
+                    <h3>Operation & Support</h3>
                     <p>Optional certified operators, ongoing technical support, and routine maintenance throughout the rental period.</p>
                 </div>
-                <div class="method-step">
-                    <div class="step-number">04</div>
-                    <h3>Collection & Inspection</h3>
+                <div class="methodology-card">
+                    <div class="method-number">4</div>
                     <img src="/placeholder.svg?height=200&width=300" alt="Inspection">
+                    <h3>Collection & Inspection</h3>
                     <p>Efficient collection and final inspection with transparent documentation of equipment condition.</p>
                 </div>
             </div>
@@ -245,35 +283,18 @@
     </section>
 
     <!-- Rental Benefits -->
-    <section class="section">
+    <section class="section section-gray">
         <div class="container">
-            <div class="split-content reverse">
-                <div class="split-text">
-                    <h2>Why Rent from ATLAS?</h2>
-                    <div class="benefits-list">
-                        <div class="benefit-item">
-                            <h4>Modern, Well-Maintained Fleet</h4>
-                            <p>All equipment undergoes regular maintenance and inspection to ensure optimal performance and reliability.</p>
-                        </div>
-                        <div class="benefit-item">
-                            <h4>Flexible Rental Terms</h4>
-                            <p>From daily rates to long-term contracts, we offer rental periods that match your project timeline and budget.</p>
-                        </div>
-                        <div class="benefit-item">
-                            <h4>Certified Operators Available</h4>
-                            <p>Experienced, certified operators can be provided with equipment rental for safe and efficient operations.</p>
-                        </div>
-                        <div class="benefit-item">
-                            <h4>24/7 Technical Support</h4>
-                            <p>Round-the-clock support and rapid response for any technical issues or emergency replacements.</p>
-                        </div>
-                        <div class="benefit-item">
-                            <h4>Comprehensive Insurance</h4>
-                            <p>Full insurance coverage options available to protect your project investment.</p>
-                        </div>
-                    </div>
+            <div class="safety-grid">
+                <div class="safety-content">
+                    <h2 class="section-title">Why Rent from ATLAS?</h2>
+                    <p><strong>Modern, Well-Maintained Fleet:</strong> All equipment undergoes regular maintenance and inspection to ensure optimal performance and reliability.</p>
+                    <p><strong>Flexible Rental Terms:</strong> From daily rates to long-term contracts, we offer rental periods that match your project timeline and budget.</p>
+                    <p><strong>Certified Operators Available:</strong> Experienced, certified operators can be provided with equipment rental for safe and efficient operations.</p>
+                    <p><strong>24/7 Technical Support:</strong> Round-the-clock support and rapid response for any technical issues or emergency replacements.</p>
+                    <p><strong>Comprehensive Insurance:</strong> Full insurance coverage options available to protect your project investment.</p>
                 </div>
-                <div class="split-image">
+                <div class="safety-image">
                     <img src="/placeholder.svg?height=600&width=600" alt="Equipment Yard">
                 </div>
             </div>
@@ -281,50 +302,46 @@
     </section>
 
     <!-- Equipment Gallery -->
-    <section class="section bg-light">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">Equipment Gallery</h2>
+            <div class="text-center">
+                <h2 class="section-title">Equipment Gallery</h2>
+            </div>
             <div class="gallery-grid">
-                <div class="gallery-item" data-category="equipment">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Excavator Fleet">
                     <div class="gallery-overlay">
-                        <h3>Excavator Fleet</h3>
-                        <p>Multiple Capacities</p>
+                        <span>Excavator Fleet<br>Multiple Capacities</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="equipment">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Crane Fleet">
                     <div class="gallery-overlay">
-                        <h3>Crane Collection</h3>
-                        <p>25-500 Tons</p>
+                        <span>Crane Collection<br>25-500 Tons</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="equipment">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Dredger Fleet">
                     <div class="gallery-overlay">
-                        <h3>Dredging Fleet</h3>
-                        <p>Marine Equipment</p>
+                        <span>Dredging Fleet<br>Marine Equipment</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="equipment">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Bulldozer Fleet">
                     <div class="gallery-overlay">
-                        <h3>Bulldozer Range</h3>
-                        <p>Heavy Duty</p>
+                        <span>Bulldozer Range<br>Heavy Duty</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="equipment">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Generators">
                     <div class="gallery-overlay">
-                        <h3>Power Generation</h3>
-                        <p>50-2000 KVA</p>
+                        <span>Power Generation<br>50-2000 KVA</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="equipment">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Barge Fleet">
                     <div class="gallery-overlay">
-                        <h3>Marine Vessels</h3>
-                        <p>Barges & Boats</p>
+                        <span>Marine Vessels<br>Barges & Boats</span>
                     </div>
                 </div>
             </div>
@@ -332,52 +349,65 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="section">
+    <section class="section section-gray">
         <div class="container">
-            <h2 class="section-title">Client Testimonials</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial-track">
-                    <div class="testimonial-card active">
-                        <div class="testimonial-image">
-                            <img src="/placeholder.svg?height=80&width=80" alt="Client">
-                        </div>
-                        <p class="testimonial-text">"ATLAS provided us with a complete fleet of excavators and bulldozers for our infrastructure project. The equipment was in excellent condition and the service was outstanding."</p>
-                        <h4>Khalid Al-Mazrouei</h4>
-                        <p class="testimonial-role">Construction Manager, UAE Developer</p>
+            <div class="text-center">
+                <h2 class="section-title">Client Testimonials</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"ATLAS provided us with a complete fleet of excavators and bulldozers for our infrastructure project. The equipment was in excellent condition and the service was outstanding."</p>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-image">
-                            <img src="/placeholder.svg?height=80&width=80" alt="Client">
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Khalid Al-Mazrouei">
+                        <div>
+                            <h4>Khalid Al-Mazrouei</h4>
+                            <p>Construction Manager, UAE Developer</p>
                         </div>
-                        <p class="testimonial-text">"We've been renting dredging equipment from ATLAS for three years. Their maintenance standards and technical support are the best in the region."</p>
-                        <h4>Maria Santos</h4>
-                        <p class="testimonial-role">Project Engineer, Marine Contractor</p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-image">
-                            <img src="/placeholder.svg?height=80&width=80" alt="Client">
-                        </div>
-                        <p class="testimonial-text">"The flexibility of rental terms and the quality of operators provided made ATLAS our preferred equipment partner for all our projects."</p>
-                        <h4>Ahmed Hassan</h4>
-                        <p class="testimonial-role">Operations Director, Construction Company</p>
                     </div>
                 </div>
-                <div class="testimonial-controls">
-                    <button class="testimonial-btn prev">‹</button>
-                    <button class="testimonial-btn next">›</button>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"We've been renting dredging equipment from ATLAS for three years. Their maintenance standards and technical support are the best in the region."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Maria Santos">
+                        <div>
+                            <h4>Maria Santos</h4>
+                            <p>Project Engineer, Marine Contractor</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The flexibility of rental terms and the quality of operators provided made ATLAS our preferred equipment partner for all our projects."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Ahmed Hassan">
+                        <div>
+                            <h4>Ahmed Hassan</h4>
+                            <p>Operations Director, Construction Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev">&lt;</button>
+                <button class="testimonial-next">&gt;</button>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section" style="background-image: url('/placeholder.svg?height=400&width=1600')">
-        <div class="cta-overlay"></div>
-        <div class="container">
-            <div class="cta-content">
-                <h2>Rent Quality Equipment Today</h2>
-                <p>Modern fleet with flexible terms and comprehensive support</p>
-                <a href="../quote.html" class="btn btn-primary">Request Equipment Quote</a>
+    <section class="cta-banner" style="background-image: url('/placeholder.svg?height=400&width=1600');">
+        <div class="hero-overlay"></div>
+        <div class="container cta-content">
+            <h2>Rent Quality Equipment Today</h2>
+            <p>Modern fleet with flexible terms and comprehensive support</p>
+            <div class="hero-buttons">
+                <a href="./quote.html" class="btn-cta-large">Request Equipment Quote</a>
+                <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
             </div>
         </div>
     </section>
@@ -398,29 +428,28 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services/dredging-reclamation.html">Dredging & Reclamation</a></li>
-                        <li><a href="services/marine-construction.html">Marine Construction</a></li>
-                        <li><a href="services/infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
-                        <li><a href="services/oil-gas-services.html">Oil & Gas Services</a></li>
+                        <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
+                        <li><a href="./marine-construction.html">Marine Construction</a></li>
+                        <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
+                        <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Info</h4>
                     <ul class="contact-info">
-                        <li>📍 Office Number 35, Flat 6 , Corniche Building, Abudhabi</li>
+                        <li>📍 Office Number 35, Flat 6, Corniche Building, Abudhabi</li>
                         <li>📞 +971 50 445 3937</li>
                         <li>✉️ info@atlas-international.ae</li>
-                        <!-- <li>🕐 Sun-Thu: 8AM - 6PM</li> -->
                     </ul>
                 </div>
             </div>
@@ -430,14 +459,14 @@
         </div>
     </footer>
 
-
     <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div class="lightbox-caption" id="lightbox-caption"></div>
+    <div class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">&lt;</button>
+        <button class="lightbox-next">&gt;</button>
+        <img src="" alt="Lightbox Image">
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

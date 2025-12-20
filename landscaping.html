@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landscaping & External Works - ATLAS International</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-     <header class="header">
+    <!-- Navigation -->
+    <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="./images/atlas-logo.png" style="height: 50px;"></img>
-                    <!-- <h1>ATLAS</h1>
-                    <p class="logo-subtitle">International Transport & General Contracting</p> -->
+                    <img src="./images/atlas-logo.png" style="height: 50px;" alt="ATLAS Logo">
                 </div>
                 <nav class="nav">
                     <ul class="nav-menu">
-                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li class="dropdown">
                             <a href="./services.html">Services</a>
                             <ul class="dropdown-menu">
                                 <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
                                 <li><a href="./marine-construction.html">Marine Construction</a></li>
-                                <li><a href="./infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
+                                <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
                                 <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                                 <li><a href="./logistics-transportation.html">Logistics & Transportation</a></li>
                                 <li><a href="./equipment-rental.html">Equipment Rental</a></li>
-                                <li><a href="./landscaping-external.html">Landscaping & External Works</a></li>
+                                <li><a href="./landscaping.html">Landscaping & External Works</a></li>
                             </ul>
                         </li>
                         <li><a href="./gallery.html">Gallery</a></li>
@@ -46,49 +45,42 @@
         </div>
     </header>
 
-
-    <section class="hero-carousel">
-        <div class="carousel-container">
-            <div class="carousel-slide active" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title">Landscaping & External Works</h1>
-                    <p class="hero-subtitle">Creating beautiful outdoor spaces with professional design and installation</p>
-                </div>
-            </div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title">Complete Landscape Solutions</h1>
-                    <p class="hero-subtitle">From concept to maintenance for residential and commercial projects</p>
-                </div>
-            </div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title">Hardscape Excellence</h1>
-                    <p class="hero-subtitle">Premium paving, walls, and outdoor living installations</p>
-                </div>
-            </div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title">Advanced Irrigation Systems</h1>
-                    <p class="hero-subtitle">Smart water management for sustainable landscapes</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+        <div class="container hero-content">
+            <div>
+                <h1 class="hero-title">Landscaping & External Works</h1>
+                <p class="hero-subtitle">Creating beautiful outdoor spaces with professional design and installation</p>
+                <div class="hero-buttons">
+                    <a href="./quote.html" class="btn btn-primary">Request Quote</a>
+                    <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
         </div>
-        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
-        <button class="carousel-btn next" aria-label="Next slide">›</button>
-        <div class="carousel-indicators"></div>
     </section>
 
+    <!-- Overview Section -->
     <section class="section">
         <div class="container">
-            <div class="content-with-image">
-                <div class="content-text">
-                    <h2>Transform Your Outdoor Spaces</h2>
-                    <p>ATLAS International provides comprehensive landscaping and external works services for residential, commercial, and public sector projects throughout Kuwait. Our experienced team combines creative design with quality materials and expert installation to create stunning outdoor environments.</p>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">Transform Your Outdoor Spaces</h2>
+                    <p>ATLAS International provides comprehensive landscaping and external works services for residential, commercial, and public sector projects throughout the UAE. Our experienced team combines creative design with quality materials and expert installation to create stunning outdoor environments.</p>
                     <p>From intimate residential gardens to large-scale commercial landscapes, we handle all aspects including softscape planting, hardscape construction, irrigation systems, lighting, water features, and ongoing maintenance programs.</p>
                     <ul class="feature-list">
                         <li>Custom landscape design and planning</li>
@@ -99,203 +91,265 @@
                         <li>Sustainable desert landscaping solutions</li>
                     </ul>
                 </div>
-                <div class="content-image">
+                <div class="about-image">
                     <img src="/placeholder.svg?height=500&width=600" alt="Landscape Design">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-light">
+    <!-- Services Section -->
+    <section class="section section-gray">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Landscaping Services</h2>
-                <p>Complete outdoor solutions from design to maintenance</p>
+            <div class="text-center">
+                <h2 class="section-title">Our Landscaping Services</h2>
+                <p class="section-subtitle">Complete outdoor solutions from design to maintenance</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Landscape Design">
-                    <h3>Landscape Design</h3>
-                    <p>Creative design services with 3D visualizations, plant selection, and detailed construction plans tailored to your vision and climate.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Landscape Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Landscape Design</h3>
+                        <p>Creative design services with 3D visualizations, plant selection, and detailed construction plans tailored to your vision and climate.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Softscape Installation">
-                    <h3>Softscape Installation</h3>
-                    <p>Expert planting of trees, shrubs, groundcovers, and flowers using high-quality nursery stock and proper installation techniques.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Softscape Installation">
+                    </div>
+                    <div class="service-content">
+                        <h3>Softscape Installation</h3>
+                        <p>Expert planting of trees, shrubs, groundcovers, and flowers using high-quality nursery stock and proper installation techniques.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Hardscape Construction">
-                    <h3>Hardscape Construction</h3>
-                    <p>Professional installation of pavers, natural stone, retaining walls, pergolas, and outdoor living spaces.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Hardscape Construction">
+                    </div>
+                    <div class="service-content">
+                        <h3>Hardscape Construction</h3>
+                        <p>Professional installation of pavers, natural stone, retaining walls, pergolas, and outdoor living spaces.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Irrigation Systems">
-                    <h3>Irrigation Systems</h3>
-                    <p>Design and installation of efficient drip and sprinkler irrigation with smart controllers and water-saving technology.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Irrigation Systems">
+                    </div>
+                    <div class="service-content">
+                        <h3>Irrigation Systems</h3>
+                        <p>Design and installation of efficient drip and sprinkler irrigation with smart controllers and water-saving technology.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Landscape Lighting">
-                    <h3>Landscape Lighting</h3>
-                    <p>LED landscape lighting design and installation for safety, security, and aesthetic enhancement of outdoor spaces.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Landscape Lighting">
+                    </div>
+                    <div class="service-content">
+                        <h3>Landscape Lighting</h3>
+                        <p>LED landscape lighting design and installation for safety, security, and aesthetic enhancement of outdoor spaces.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Maintenance Services">
-                    <h3>Maintenance Programs</h3>
-                    <p>Regular maintenance services including mowing, trimming, fertilization, pest control, and seasonal color rotation.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Maintenance Services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Maintenance Programs</h3>
+                        <p>Regular maintenance services including mowing, trimming, fertilization, pest control, and seasonal color rotation.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Portfolio Showcase -->
     <section class="section">
         <div class="container">
-            <div class="image-carousel">
-                <h2>Our Landscaping Portfolio</h2>
-                <div class="carousel-wrapper">
-                    <div class="carousel-track">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Villa Garden">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Commercial Landscape">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Water Feature">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Hardscape Path">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Public Space">
-                    </div>
+            <div class="text-center">
+                <h2 class="section-title">Our Landscaping Portfolio</h2>
+            </div>
+            <div class="fleet-grid">
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Villa Garden">
+                </div>
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Commercial Landscape">
+                </div>
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Water Feature">
+                </div>
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Hardscape Path">
+                </div>
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Public Space">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-light">
+    <!-- Methodology Section -->
+    <section class="section section-gray">
         <div class="container">
-            <div class="methodology">
-                <h2>Our Landscaping Process</h2>
-                <div class="methodology-steps">
-                    <div class="methodology-step">
-                        <div class="step-number">01</div>
-                        <h3>Site Analysis & Consultation</h3>
-                        <p>Initial site visit to assess conditions, understand your vision, evaluate soil, drainage, sun exposure, and existing features to inform design.</p>
-                    </div>
-                    <div class="methodology-step">
-                        <div class="step-number">02</div>
-                        <h3>Design Development</h3>
-                        <p>Creation of detailed landscape plans with plant palettes, hardscape materials, irrigation layout, and 3D visualizations for your approval.</p>
-                    </div>
-                    <div class="methodology-step">
-                        <div class="step-number">03</div>
-                        <h3>Site Preparation</h3>
-                        <p>Grading, soil amendments, drainage installation, and preparation of planting beds and hardscape areas according to approved plans.</p>
-                    </div>
-                    <div class="methodology-step">
-                        <div class="step-number">04</div>
-                        <h3>Installation</h3>
-                        <p>Professional installation of irrigation, hardscape elements, plants, lighting, and all landscape features with attention to detail and quality.</p>
-                    </div>
-                    <div class="methodology-step">
-                        <div class="step-number">05</div>
-                        <h3>Establishment & Maintenance</h3>
-                        <p>Post-installation care during establishment period with optional ongoing maintenance programs to keep your landscape beautiful year-round.</p>
-                    </div>
+            <div class="text-center">
+                <h2 class="section-title">Our Landscaping Process</h2>
+            </div>
+            <div class="methodology-grid">
+                <div class="methodology-card">
+                    <div class="method-number">1</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Site Analysis">
+                    <h3>Site Analysis & Consultation</h3>
+                    <p>Initial site visit to assess conditions, understand your vision, evaluate soil, drainage, sun exposure, and existing features to inform design.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="method-number">2</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Design">
+                    <h3>Design Development</h3>
+                    <p>Creation of detailed landscape plans with plant palettes, hardscape materials, irrigation layout, and 3D visualizations for your approval.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="method-number">3</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Site Prep">
+                    <h3>Site Preparation</h3>
+                    <p>Grading, soil amendments, drainage installation, and preparation of planting beds and hardscape areas according to approved plans.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="method-number">4</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Installation">
+                    <h3>Installation</h3>
+                    <p>Professional installation of irrigation, hardscape elements, plants, lighting, and all landscape features with attention to detail and quality.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="method-number">5</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Maintenance">
+                    <h3>Establishment & Maintenance</h3>
+                    <p>Post-installation care during establishment period with optional ongoing maintenance programs to keep your landscape beautiful year-round.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Gallery Section -->
     <section class="section">
         <div class="container">
-            <div class="section-header">
-                <h2>Featured Landscape Projects</h2>
-                <p>Excellence in outdoor design and construction</p>
+            <div class="text-center">
+                <h2 class="section-title">Featured Landscape Projects</h2>
+                <p class="section-subtitle">Excellence in outdoor design and construction</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item" data-category="landscaping">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=400&width=600" alt="Residential Estate">
                     <div class="gallery-overlay">
-                        <h3>Bayan Luxury Residence</h3>
-                        <p>Complete estate landscaping</p>
+                        <span>Bayan Luxury Residence<br>Complete estate landscaping</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="landscaping">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=400&width=600" alt="Corporate Plaza">
                     <div class="gallery-overlay">
-                        <h3>Kuwait Business Tower</h3>
-                        <p>Commercial plaza landscape</p>
+                        <span>Kuwait Business Tower<br>Commercial plaza landscape</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="landscaping">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=400&width=600" alt="Public Park">
                     <div class="gallery-overlay">
-                        <h3>Sabah Al-Salem Park</h3>
-                        <p>Community park development</p>
+                        <span>Sabah Al-Salem Park<br>Community park development</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="landscaping">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=400&width=600" alt="Resort Landscaping">
                     <div class="gallery-overlay">
-                        <h3>Coastal Resort Complex</h3>
-                        <p>Hospitality landscaping</p>
+                        <span>Coastal Resort Complex<br>Hospitality landscaping</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section testimonials">
+    <!-- Testimonials Section -->
+    <section class="section section-gray">
         <div class="container">
-            <h2>Client Testimonials</h2>
+            <div class="text-center">
+                <h2 class="section-title">Client Testimonials</h2>
+            </div>
             <div class="testimonials-slider">
-                <div class="testimonial-slide">
-                    <img src="/placeholder.svg?height=100&width=100" alt="Client" class="testimonial-image">
-                    <p class="testimonial-text">"ATLAS transformed our villa's outdoor space into a stunning oasis. Their design was creative yet practical, and the installation quality was exceptional. The ongoing maintenance keeps everything looking perfect."</p>
-                    <p class="testimonial-author">Sarah Al-Sabah</p>
-                    <p class="testimonial-position">Homeowner, Bayan</p>
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"ATLAS transformed our villa's outdoor space into a stunning oasis. Their design was creative yet practical, and the installation quality was exceptional. The ongoing maintenance keeps everything looking perfect."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Sarah Al-Sabah">
+                        <div>
+                            <h4>Sarah Al-Sabah</h4>
+                            <p>Homeowner, Bayan</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-slide">
-                    <img src="/placeholder.svg?height=100&width=100" alt="Client" class="testimonial-image">
-                    <p class="testimonial-text">"The commercial landscaping for our office complex exceeded expectations. ATLAS delivered a beautiful, low-maintenance design that impresses our clients and provides a pleasant environment for employees."</p>
-                    <p class="testimonial-author">Khalid Al-Mansoori</p>
-                    <p class="testimonial-position">Facilities Director, Kuwait Industries Group</p>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The commercial landscaping for our office complex exceeded expectations. ATLAS delivered a beautiful, low-maintenance design that impresses our clients and provides a pleasant environment for employees."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Khalid Al-Mansoori">
+                        <div>
+                            <h4>Khalid Al-Mansoori</h4>
+                            <p>Facilities Director, Kuwait Industries Group</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev">&lt;</button>
+                <button class="testimonial-next">&gt;</button>
             </div>
         </div>
     </section>
 
-    <section class="section cta-section">
-        <div class="container">
+    <!-- CTA Section -->
+    <section class="cta-banner" style="background-image: url('/placeholder.svg?height=400&width=1920');">
+        <div class="hero-overlay"></div>
+        <div class="container cta-content">
             <h2>Ready to Transform Your Landscape?</h2>
             <p>Contact us for a consultation and free design estimate</p>
-            <div class="cta-buttons">
-                <a href="../quote.html" class="btn btn-primary">Request Quote</a>
-                <a href="../contact.html" class="btn btn-secondary">Contact Us</a>
+            <div class="hero-buttons">
+                <a href="./quote.html" class="btn-cta-large">Request Quote</a>
+                <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <section class="section bg-light related-services">
+    <!-- Related Services Section -->
+    <section class="section">
         <div class="container">
-            <h2>Related Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Earthworks">
+            <div class="text-center">
+                <h2 class="section-title">Related Services</h2>
+            </div>
+            <div class="related-services-grid">
+                <div class="related-service-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Earthworks">
                     <h3>Infrastructure & Earthworks</h3>
                     <p>Site preparation and grading services for landscape projects of all scales.</p>
-                    <a href="infrastructure-earthworks.html" class="btn btn-outline">Learn More</a>
+                    <a href="./infrastructure.html" class="btn-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Equipment">
+                <div class="related-service-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Equipment">
                     <h3>Equipment Rental</h3>
                     <p>Landscaping equipment available for rent including excavators and compactors.</p>
-                    <a href="equipment-rental.html" class="btn btn-outline">Learn More</a>
+                    <a href="./equipment-rental.html" class="btn-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Logistics">
+                <div class="related-service-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Logistics">
                     <h3>Material Transport</h3>
                     <p>Delivery of soil, mulch, stone, and other landscape materials to your project site.</p>
-                    <a href="logistics-transportation.html" class="btn btn-outline">Learn More</a>
+                    <a href="./logistics-transportation.html" class="btn-link">Learn More →</a>
                 </div>
             </div>
         </div>
     </section>
 
-     <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -310,29 +364,28 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services/dredging-reclamation.html">Dredging & Reclamation</a></li>
-                        <li><a href="services/marine-construction.html">Marine Construction</a></li>
-                        <li><a href="services/infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
-                        <li><a href="services/oil-gas-services.html">Oil & Gas Services</a></li>
+                        <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
+                        <li><a href="./marine-construction.html">Marine Construction</a></li>
+                        <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
+                        <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Info</h4>
                     <ul class="contact-info">
-                        <li>📍 Office Number 35, Flat 6 , Corniche Building, Abudhabi</li>
+                        <li>📍 Office Number 35, Flat 6, Corniche Building, Abudhabi</li>
                         <li>📞 +971 50 445 3937</li>
                         <li>✉️ info@atlas-international.ae</li>
-                        <!-- <li>🕐 Sun-Thu: 8AM - 6PM</li> -->
                     </ul>
                 </div>
             </div>
@@ -342,14 +395,14 @@
         </div>
     </footer>
 
-
-    <div class="lightbox" id="lightbox">
+    <!-- Lightbox Modal -->
+    <div class="lightbox">
         <button class="lightbox-close">&times;</button>
-        <img src="/placeholder.svg" alt="Lightbox Image" class="lightbox-image">
-        <button class="lightbox-btn lightbox-prev">‹</button>
-        <button class="lightbox-btn lightbox-next">›</button>
+        <button class="lightbox-prev">&lt;</button>
+        <button class="lightbox-next">&gt;</button>
+        <img src="" alt="Lightbox Image">
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

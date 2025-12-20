@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marine Construction Services | ATLAS International</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -13,24 +13,22 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="./images/atlas-logo.png" style="height: 50px;"></img>
-                    <!-- <h1>ATLAS</h1>
-                    <p class="logo-subtitle">International Transport & General Contracting</p> -->
+                    <img src="./images/atlas-logo.png" style="height: 50px;" alt="ATLAS Logo">
                 </div>
                 <nav class="nav">
                     <ul class="nav-menu">
-                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li class="dropdown">
                             <a href="./services.html">Services</a>
                             <ul class="dropdown-menu">
                                 <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
                                 <li><a href="./marine-construction.html">Marine Construction</a></li>
-                                <li><a href="./infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
+                                <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
                                 <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                                 <li><a href="./logistics-transportation.html">Logistics & Transportation</a></li>
                                 <li><a href="./equipment-rental.html">Equipment Rental</a></li>
-                                <li><a href="./landscaping-external.html">Landscaping & External Works</a></li>
+                                <li><a href="./landscaping.html">Landscaping & External Works</a></li>
                             </ul>
                         </li>
                         <li><a href="./gallery.html">Gallery</a></li>
@@ -48,126 +46,164 @@
         </div>
     </header>
 
-    <!-- Hero Section with Carousel -->
-    <section class="service-hero">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="hero-carousel">
-            <div class="hero-slide active" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-            </div>
-            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-            </div>
-            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-            </div>
-            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-            </div>
+            <div class="hero-slide active" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
         </div>
-        <button class="carousel-btn prev" onclick="changeSlide(-1, 'hero')"><i class="fas fa-chevron-left"></i></button>
-        <button class="carousel-btn next" onclick="changeSlide(1, 'hero')"><i class="fas fa-chevron-right"></i></button>
+        <div class="hero-overlay"></div>
+        <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
         <div class="container hero-content">
-            <div class="breadcrumb">
-                <a href="../index.html">Home</a> / <a href="../services.html">Services</a> / Marine Construction
+            <div>
+                <h1 class="hero-title">Marine Construction Services</h1>
+                <p class="hero-subtitle">Building Robust Maritime Infrastructure</p>
+                <div class="hero-buttons">
+                    <a href="./quote.html" class="btn btn-primary">Request Quote</a>
+                    <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
             </div>
-            <h1>Marine Construction Services</h1>
-            <p class="hero-subtitle">Building Robust Maritime Infrastructure</p>
         </div>
     </section>
 
     <!-- Service Overview -->
-    <section class="service-overview">
+    <section class="section">
         <div class="container">
-            <div class="service-intro">
-                <h2>Expert Marine Construction Solutions</h2>
-                <p>ATLAS International provides comprehensive marine construction services for ports, harbors, offshore facilities, and coastal infrastructure. Our experienced team and modern equipment deliver safe, efficient, and durable marine structures.</p>
+            <div class="text-center">
+                <h2 class="section-title">Expert Marine Construction Solutions</h2>
+                <p class="section-subtitle">ATLAS International provides comprehensive marine construction services for ports, harbors, offshore facilities, and coastal infrastructure. Our experienced team and modern equipment deliver safe, efficient, and durable marine structures.</p>
             </div>
-            <div class="service-stats">
-                <div class="stat-card">
-                    <i class="fas fa-anchor"></i>
-                    <h3>150+</h3>
-                    <p>Marine Structures Built</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">150+</div>
+                        <h3>Marine Structures Built</h3>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-ship"></i>
-                    <h3>25+</h3>
-                    <p>Specialized Vessels</p>
+                <div class="service-card">
+                    <div class="service-content">
+                        <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">25+</div>
+                        <h3>Specialized Vessels</h3>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-hard-hat"></i>
-                    <h3>500+</h3>
-                    <p>Certified Personnel</p>
+                <div class="service-card">
+                    <div class="service-content">
+                        <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">500+</div>
+                        <h3>Certified Personnel</h3>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>ISO 9001</h3>
-                    <p>Quality Certified</p>
+                <div class="service-card">
+                    <div class="service-content">
+                        <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">ISO 9001</div>
+                        <h3>Quality Certified</h3>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- What We Offer -->
-    <section class="service-offerings">
+    <section class="section section-gray">
         <div class="container">
-            <h2>Our Marine Construction Services</h2>
-            <div class="offerings-grid">
-                <div class="offering-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Jetty Construction">
-                    <h3>Jetty & Pier Construction</h3>
-                    <p>Design and construction of jetties, piers, and wharves for commercial and industrial applications.</p>
+            <div class="text-center">
+                <h2 class="section-title">Our Marine Construction Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Jetty Construction">
+                    </div>
+                    <div class="service-content">
+                        <h3>Jetty & Pier Construction</h3>
+                        <p>Design and construction of jetties, piers, and wharves for commercial and industrial applications.</p>
+                    </div>
                 </div>
-                <div class="offering-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Offshore Structures">
-                    <h3>Offshore Structures</h3>
-                    <p>Installation and maintenance of offshore platforms, subsea structures, and marine facilities.</p>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Offshore Structures">
+                    </div>
+                    <div class="service-content">
+                        <h3>Offshore Structures</h3>
+                        <p>Installation and maintenance of offshore platforms, subsea structures, and marine facilities.</p>
+                    </div>
                 </div>
-                <div class="offering-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Coastal Protection">
-                    <h3>Coastal Protection</h3>
-                    <p>Construction of breakwaters, seawalls, and revetments for coastal erosion control.</p>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Coastal Protection">
+                    </div>
+                    <div class="service-content">
+                        <h3>Coastal Protection</h3>
+                        <p>Construction of breakwaters, seawalls, and revetments for coastal erosion control.</p>
+                    </div>
                 </div>
-                <div class="offering-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Underwater Works">
-                    <h3>Underwater Works</h3>
-                    <p>Specialized underwater construction, inspection, and repair services with certified divers.</p>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Underwater Works">
+                    </div>
+                    <div class="service-content">
+                        <h3>Underwater Works</h3>
+                        <p>Specialized underwater construction, inspection, and repair services with certified divers.</p>
+                    </div>
                 </div>
-                <div class="offering-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Marina Development">
-                    <h3>Marina Development</h3>
-                    <p>Complete marina construction including floating docks, moorings, and shore facilities.</p>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Marina Development">
+                    </div>
+                    <div class="service-content">
+                        <h3>Marina Development</h3>
+                        <p>Complete marina construction including floating docks, moorings, and shore facilities.</p>
+                    </div>
                 </div>
-                <div class="offering-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Bridge Foundations">
-                    <h3>Bridge Foundations</h3>
-                    <p>Marine piling and foundation works for bridge construction and rehabilitation projects.</p>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Bridge Foundations">
+                    </div>
+                    <div class="service-content">
+                        <h3>Bridge Foundations</h3>
+                        <p>Marine piling and foundation works for bridge construction and rehabilitation projects.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Methodology -->
-    <section class="methodology">
+    <section class="section">
         <div class="container">
-            <h2>Our Construction Methodology</h2>
-            <div class="methodology-steps">
-                <div class="method-step">
-                    <div class="step-number">01</div>
+            <div class="text-center">
+                <h2 class="section-title">Our Construction Methodology</h2>
+            </div>
+            <div class="methodology-grid">
+                <div class="methodology-card">
+                    <div class="method-number">1</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Site Survey">
                     <h3>Site Survey & Design</h3>
                     <p>Comprehensive hydrographic surveys, geotechnical investigations, and detailed engineering design.</p>
                 </div>
-                <div class="method-step">
-                    <div class="step-number">02</div>
+                <div class="methodology-card">
+                    <div class="method-number">2</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Mobilization">
                     <h3>Mobilization</h3>
                     <p>Equipment deployment, marine logistics setup, and establishment of safety protocols.</p>
                 </div>
-                <div class="method-step">
-                    <div class="step-number">03</div>
+                <div class="methodology-card">
+                    <div class="method-number">3</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Construction">
                     <h3>Construction</h3>
                     <p>Pile driving, structural installation, concrete works, and specialized marine operations.</p>
                 </div>
-                <div class="method-step">
-                    <div class="step-number">04</div>
+                <div class="methodology-card">
+                    <div class="method-number">4</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Quality Assurance">
                     <h3>Quality Assurance</h3>
                     <p>Continuous monitoring, testing, and inspection throughout the construction process.</p>
                 </div>
@@ -176,61 +212,73 @@
     </section>
 
     <!-- Equipment Showcase -->
-    <section class="equipment-showcase">
+    <section class="section section-gray">
         <div class="container">
-            <h2>Specialized Marine Equipment</h2>
-            <div class="equipment-grid">
-                <div class="equipment-item">
+            <div class="text-center">
+                <h2 class="section-title">Specialized Marine Equipment</h2>
+            </div>
+            <div class="fleet-grid">
+                <div class="fleet-item">
                     <img src="/placeholder.svg?height=250&width=350" alt="Pile Driving Barge">
-                    <h3>Pile Driving Barges</h3>
-                    <p>Heavy-duty hydraulic hammers</p>
+                    <div style="padding: 1.5rem; background: white;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Pile Driving Barges</h3>
+                        <p style="color: var(--gray-medium);">Heavy-duty hydraulic hammers</p>
+                    </div>
                 </div>
-                <div class="equipment-item">
+                <div class="fleet-item">
                     <img src="/placeholder.svg?height=250&width=350" alt="Floating Cranes">
-                    <h3>Floating Cranes</h3>
-                    <p>Up to 500-ton capacity</p>
+                    <div style="padding: 1.5rem; background: white;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Floating Cranes</h3>
+                        <p style="color: var(--gray-medium);">Up to 500-ton capacity</p>
+                    </div>
                 </div>
-                <div class="equipment-item">
+                <div class="fleet-item">
                     <img src="/placeholder.svg?height=250&width=350" alt="Work Barges">
-                    <h3>Work Barges</h3>
-                    <p>Multiple configurations available</p>
+                    <div style="padding: 1.5rem; background: white;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Work Barges</h3>
+                        <p style="color: var(--gray-medium);">Multiple configurations available</p>
+                    </div>
                 </div>
-                <div class="equipment-item">
+                <div class="fleet-item">
                     <img src="/placeholder.svg?height=250&width=350" alt="Diving Support">
-                    <h3>Diving Support Vessels</h3>
-                    <p>Fully equipped dive systems</p>
+                    <div style="padding: 1.5rem; background: white;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Diving Support Vessels</h3>
+                        <p style="color: var(--gray-medium);">Fully equipped dive systems</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Project Gallery -->
-    <section class="project-gallery">
+    <section class="section">
         <div class="container">
-            <h2>Recent Marine Construction Projects</h2>
+            <div class="text-center">
+                <h2 class="section-title">Recent Marine Construction Projects</h2>
+            </div>
             <div class="gallery-grid">
-                <div class="gallery-item" onclick="openLightbox('/placeholder.svg?height=800&width=1200')">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Jetty Project">
                     <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                        <span>Jetty Project</span>
                     </div>
                 </div>
-                <div class="gallery-item" onclick="openLightbox('/placeholder.svg?height=800&width=1200')">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Platform Project">
                     <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                        <span>Platform Project</span>
                     </div>
                 </div>
-                <div class="gallery-item" onclick="openLightbox('/placeholder.svg?height=800&width=1200')">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Breakwater Project">
                     <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                        <span>Breakwater Project</span>
                     </div>
                 </div>
-                <div class="gallery-item" onclick="openLightbox('/placeholder.svg?height=800&width=1200')">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=300&width=400" alt="Marina Project">
                     <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
+                        <span>Marina Project</span>
                     </div>
                 </div>
             </div>
@@ -238,72 +286,100 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="section section-gray">
         <div class="container">
-            <h2>Client Testimonials</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial-slide active">
-                    <i class="fas fa-quote-left"></i>
-                    <p>"ATLAS International's marine construction expertise is unmatched. They completed our port expansion ahead of schedule and within budget."</p>
-                    <h4>Mohammed Al-Rashid</h4>
-                    <span>Port Authority Director</span>
+            <div class="text-center">
+                <h2 class="section-title">Client Testimonials</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"ATLAS International's marine construction expertise is unmatched. They completed our port expansion ahead of schedule and within budget."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Mohammed Al-Rashid">
+                        <div>
+                            <h4>Mohammed Al-Rashid</h4>
+                            <p>Port Authority Director</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-slide">
-                    <i class="fas fa-quote-left"></i>
-                    <p>"Professional team with exceptional safety standards. Their offshore platform installation was executed flawlessly."</p>
-                    <h4>Sarah Johnson</h4>
-                    <span>Operations Manager, Energy Corp</span>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Professional team with exceptional safety standards. Their offshore platform installation was executed flawlessly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Operations Manager, Energy Corp</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-slide">
-                    <i class="fas fa-quote-left"></i>
-                    <p>"Outstanding quality and attention to detail. Our marina construction exceeded all expectations."</p>
-                    <h4>Ahmed Al-Mansouri</h4>
-                    <span>Resort Development Manager</span>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Outstanding quality and attention to detail. Our marina construction exceeded all expectations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Ahmed Al-Mansouri">
+                        <div>
+                            <h4>Ahmed Al-Mansouri</h4>
+                            <p>Resort Development Manager</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial-dots">
-                <span class="dot active" onclick="currentTestimonial(0)"></span>
-                <span class="dot" onclick="currentTestimonial(1)"></span>
-                <span class="dot" onclick="currentTestimonial(2)"></span>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev">&lt;</button>
+                <button class="testimonial-next">&gt;</button>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
+    <section class="cta-banner" style="background-image: url('/placeholder.svg?height=400&width=1920');">
+        <div class="hero-overlay"></div>
+        <div class="container cta-content">
             <h2>Ready to Start Your Marine Construction Project?</h2>
             <p>Contact our team for a comprehensive consultation and project proposal.</p>
-            <div class="cta-buttons">
-                <a href="../quote.html" class="btn btn-primary">Request Quote</a>
-                <a href="../contact.html" class="btn btn-secondary">Contact Us</a>
+            <div class="hero-buttons">
+                <a href="./quote.html" class="btn-cta-large">Request Quote</a>
+                <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
             </div>
         </div>
     </section>
 
     <!-- Related Services -->
-    <section class="related-services">
+    <section class="section">
         <div class="container">
-            <h2>Related Services</h2>
-            <div class="related-grid">
-                <a href="dredging-reclamation.html" class="related-card">
+            <div class="text-center">
+                <h2 class="section-title">Related Services</h2>
+            </div>
+            <div class="related-services-grid">
+                <div class="related-service-card">
                     <img src="/placeholder.svg?height=200&width=300" alt="Dredging">
                     <h3>Dredging & Reclamation</h3>
-                </a>
-                <a href="oil-gas.html" class="related-card">
+                    <p>Comprehensive dredging and land reclamation solutions for marine projects.</p>
+                    <a href="./dredging-reclamation.html" class="btn-link">Learn More →</a>
+                </div>
+                <div class="related-service-card">
                     <img src="/placeholder.svg?height=200&width=300" alt="Oil & Gas">
                     <h3>Oil & Gas Support</h3>
-                </a>
-                <a href="logistics.html" class="related-card">
+                    <p>Specialized support services for offshore oil and gas operations.</p>
+                    <a href="./oil-gas-services.html" class="btn-link">Learn More →</a>
+                </div>
+                <div class="related-service-card">
                     <img src="/placeholder.svg?height=200&width=300" alt="Logistics">
                     <h3>Marine Logistics</h3>
-                </a>
+                    <p>Complete logistics and transportation solutions for marine projects.</p>
+                    <a href="./logistics-transportation.html" class="btn-link">Learn More →</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-     <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -318,29 +394,28 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services/dredging-reclamation.html">Dredging & Reclamation</a></li>
-                        <li><a href="services/marine-construction.html">Marine Construction</a></li>
-                        <li><a href="services/infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
-                        <li><a href="services/oil-gas-services.html">Oil & Gas Services</a></li>
+                        <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
+                        <li><a href="./marine-construction.html">Marine Construction</a></li>
+                        <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
+                        <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Info</h4>
                     <ul class="contact-info">
-                        <li>📍 Office Number 35, Flat 6 , Corniche Building, Abudhabi</li>
+                        <li>📍 Office Number 35, Flat 6, Corniche Building, Abudhabi</li>
                         <li>📞 +971 50 445 3937</li>
                         <li>✉️ info@atlas-international.ae</li>
-                        <!-- <li>🕐 Sun-Thu: 8AM - 6PM</li> -->
                     </ul>
                 </div>
             </div>
@@ -350,13 +425,14 @@
         </div>
     </footer>
 
-
     <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <span class="close-lightbox">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-prev">&lt;</button>
+        <button class="lightbox-next">&gt;</button>
+        <img src="" alt="Lightbox Image">
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

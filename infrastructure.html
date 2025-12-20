@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infrastructure & Earthworks - ATLAS International</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-      <header class="header">
+    <!-- Navigation -->
+    <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="./images/atlas-logo.png" style="height: 50px;"></img>
-                    <!-- <h1>ATLAS</h1>
-                    <p class="logo-subtitle">International Transport & General Contracting</p> -->
+                    <img src="./images/atlas-logo.png" style="height: 50px;" alt="ATLAS Logo">
                 </div>
                 <nav class="nav">
                     <ul class="nav-menu">
-                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li class="dropdown">
                             <a href="./services.html">Services</a>
                             <ul class="dropdown-menu">
                                 <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
                                 <li><a href="./marine-construction.html">Marine Construction</a></li>
-                                <li><a href="./infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
+                                <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
                                 <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                                 <li><a href="./logistics-transportation.html">Logistics & Transportation</a></li>
                                 <li><a href="./equipment-rental.html">Equipment Rental</a></li>
-                                <li><a href="./landscaping-external.html">Landscaping & External Works</a></li>
+                                <li><a href="./landscaping.html">Landscaping & External Works</a></li>
                             </ul>
                         </li>
                         <li><a href="./gallery.html">Gallery</a></li>
@@ -46,49 +45,42 @@
         </div>
     </header>
 
-
-    <section class="hero-carousel">
-        <div class="carousel-container">
-            <div class="carousel-slide active" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title">Infrastructure & Earthworks</h1>
-                    <p class="hero-subtitle">Building foundations for the future with precision earthmoving and site development</p>
-                </div>
-            </div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title">Site Preparation Excellence</h1>
-                    <p class="hero-subtitle">Comprehensive earthmoving and grading services</p>
-                </div>
-            </div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title">Land Development Specialists</h1>
-                    <p class="hero-subtitle">From concept to completion with expert earthworks</p>
-                </div>
-            </div>
-            <div class="carousel-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title">Underground Infrastructure</h1>
-                    <p class="hero-subtitle">Complete utility installation and drainage solutions</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+            <div class="hero-slide" style="background-image: url('/placeholder.svg?height=600&width=1920');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+        <div class="container hero-content">
+            <div>
+                <h1 class="hero-title">Infrastructure & Earthworks</h1>
+                <p class="hero-subtitle">Building foundations for the future with precision earthmoving and site development</p>
+                <div class="hero-buttons">
+                    <a href="./quote.html" class="btn btn-primary">Request Quote</a>
+                    <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
                 </div>
             </div>
         </div>
-        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
-        <button class="carousel-btn next" aria-label="Next slide">›</button>
-        <div class="carousel-indicators"></div>
     </section>
 
+    <!-- Overview Section -->
     <section class="section">
         <div class="container">
-            <div class="content-with-image">
-                <div class="content-text">
-                    <h2>Comprehensive Infrastructure & Earthworks Solutions</h2>
-                    <p>ATLAS International delivers complete infrastructure and earthworks services for major development projects across Kuwait. With modern heavy equipment and experienced operators, we handle everything from initial site preparation to final grading and compaction.</p>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">Comprehensive Infrastructure & Earthworks Solutions</h2>
+                    <p>ATLAS International delivers complete infrastructure and earthworks services for major development projects across the UAE. With modern heavy equipment and experienced operators, we handle everything from initial site preparation to final grading and compaction.</p>
                     <p>Our earthworks capabilities include excavation, land clearing, grading, trenching, backfilling, and soil stabilization for residential, commercial, industrial, and infrastructure projects of all scales.</p>
                     <ul class="feature-list">
                         <li>Mass excavation and bulk earthmoving</li>
@@ -99,203 +91,265 @@
                         <li>Soil compaction and stabilization</li>
                     </ul>
                 </div>
-                <div class="content-image">
+                <div class="about-image">
                     <img src="/placeholder.svg?height=500&width=600" alt="Earthworks Operations">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-light">
+    <!-- Services Section -->
+    <section class="section section-gray">
         <div class="container">
-            <div class="section-header">
-                <h2>Our Earthworks Services</h2>
-                <p>Complete infrastructure development from ground preparation to final grading</p>
+            <div class="text-center">
+                <h2 class="section-title">Our Earthworks Services</h2>
+                <p class="section-subtitle">Complete infrastructure development from ground preparation to final grading</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Excavation Services">
-                    <h3>Excavation & Trenching</h3>
-                    <p>Precision excavation for foundations, basements, trenches, and underground utilities using advanced GPS-guided equipment.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Excavation Services">
+                    </div>
+                    <div class="service-content">
+                        <h3>Excavation & Trenching</h3>
+                        <p>Precision excavation for foundations, basements, trenches, and underground utilities using advanced GPS-guided equipment.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Site Preparation">
-                    <h3>Site Preparation</h3>
-                    <p>Complete land clearing, demolition, grubbing, and site leveling to prepare your land for construction.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Site Preparation">
+                    </div>
+                    <div class="service-content">
+                        <h3>Site Preparation</h3>
+                        <p>Complete land clearing, demolition, grubbing, and site leveling to prepare your land for construction.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Road Construction">
-                    <h3>Road Construction</h3>
-                    <p>Full road building services including subgrade preparation, base course installation, and final grading for asphalt or concrete paving.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Road Construction">
+                    </div>
+                    <div class="service-content">
+                        <h3>Road Construction</h3>
+                        <p>Full road building services including subgrade preparation, base course installation, and final grading for asphalt or concrete paving.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Utility Installation">
-                    <h3>Underground Utilities</h3>
-                    <p>Installation of water lines, sewer systems, storm drainage, electrical conduits, and telecommunications infrastructure.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Utility Installation">
+                    </div>
+                    <div class="service-content">
+                        <h3>Underground Utilities</h3>
+                        <p>Installation of water lines, sewer systems, storm drainage, electrical conduits, and telecommunications infrastructure.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Soil Compaction">
-                    <h3>Compaction & Stabilization</h3>
-                    <p>Soil testing, compaction to specified densities, and stabilization treatments for optimal load-bearing capacity.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Soil Compaction">
+                    </div>
+                    <div class="service-content">
+                        <h3>Compaction & Stabilization</h3>
+                        <p>Soil testing, compaction to specified densities, and stabilization treatments for optimal load-bearing capacity.</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Grading & Backfilling">
-                    <h3>Grading & Backfilling</h3>
-                    <p>Precision grading for proper drainage, backfilling excavations, and final site contouring to engineering specifications.</p>
+                    <div class="service-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Grading & Backfilling">
+                    </div>
+                    <div class="service-content">
+                        <h3>Grading & Backfilling</h3>
+                        <p>Precision grading for proper drainage, backfilling excavations, and final site contouring to engineering specifications.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Equipment Fleet Section -->
     <section class="section">
         <div class="container">
-            <div class="image-carousel">
-                <h2>Our Heavy Equipment Fleet</h2>
-                <div class="carousel-wrapper">
-                    <div class="carousel-track">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Excavator">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Bulldozer">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Grader">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Compactor">
-                        <img src="/placeholder.svg?height=400&width=600" alt="Dump Truck">
-                    </div>
+            <div class="text-center">
+                <h2 class="section-title">Our Heavy Equipment Fleet</h2>
+            </div>
+            <div class="fleet-grid">
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Excavator">
+                </div>
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Bulldozer">
+                </div>
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Grader">
+                </div>
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Compactor">
+                </div>
+                <div class="fleet-item">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Dump Truck">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-light">
+    <!-- Methodology Section -->
+    <section class="section section-gray">
         <div class="container">
-            <div class="methodology">
-                <h2>Our Earthworks Methodology</h2>
-                <div class="methodology-steps">
-                    <div class="methodology-step">
-                        <div class="step-number">01</div>
-                        <h3>Site Survey & Analysis</h3>
-                        <p>Comprehensive topographic surveys, soil testing, and geotechnical investigations to understand site conditions and develop optimal earthworks strategies.</p>
-                    </div>
-                    <div class="methodology-step">
-                        <div class="step-number">02</div>
-                        <h3>Planning & Engineering</h3>
-                        <p>Detailed cut-and-fill calculations, haul road planning, equipment selection, and sequencing to maximize efficiency and minimize costs.</p>
-                    </div>
-                    <div class="methodology-step">
-                        <div class="step-number">03</div>
-                        <h3>Excavation & Earthmoving</h3>
-                        <p>Systematic excavation, material handling, and placement using modern GPS-guided equipment for precision and productivity.</p>
-                    </div>
-                    <div class="methodology-step">
-                        <div class="step-number">04</div>
-                        <h3>Compaction & Testing</h3>
-                        <p>Layer-by-layer compaction with continuous testing to ensure specified densities are achieved for structural integrity.</p>
-                    </div>
-                    <div class="methodology-step">
-                        <div class="step-number">05</div>
-                        <h3>Final Grading & Handover</h3>
-                        <p>Precision final grading to design elevations, drainage verification, and as-built documentation for seamless project handover.</p>
-                    </div>
+            <div class="text-center">
+                <h2 class="section-title">Our Earthworks Methodology</h2>
+            </div>
+            <div class="methodology-grid">
+                <div class="methodology-card">
+                    <div class="method-number">1</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Site Survey">
+                    <h3>Site Survey & Analysis</h3>
+                    <p>Comprehensive topographic surveys, soil testing, and geotechnical investigations to understand site conditions and develop optimal earthworks strategies.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="method-number">2</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Planning">
+                    <h3>Planning & Engineering</h3>
+                    <p>Detailed cut-and-fill calculations, haul road planning, equipment selection, and sequencing to maximize efficiency and minimize costs.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="method-number">3</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Excavation">
+                    <h3>Excavation & Earthmoving</h3>
+                    <p>Systematic excavation, material handling, and placement using modern GPS-guided equipment for precision and productivity.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="method-number">4</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Compaction">
+                    <h3>Compaction & Testing</h3>
+                    <p>Layer-by-layer compaction with continuous testing to ensure specified densities are achieved for structural integrity.</p>
+                </div>
+                <div class="methodology-card">
+                    <div class="method-number">5</div>
+                    <img src="/placeholder.svg?height=200&width=300" alt="Final Grading">
+                    <h3>Final Grading & Handover</h3>
+                    <p>Precision final grading to design elevations, drainage verification, and as-built documentation for seamless project handover.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Gallery Section -->
     <section class="section">
         <div class="container">
-            <div class="section-header">
-                <h2>Recent Earthworks Projects</h2>
-                <p>Showcasing our infrastructure development expertise</p>
+            <div class="text-center">
+                <h2 class="section-title">Recent Earthworks Projects</h2>
+                <p class="section-subtitle">Showcasing our infrastructure development expertise</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item" data-category="earthworks">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=400&width=600" alt="Residential Development">
                     <div class="gallery-overlay">
-                        <h3>Al-Khiran Residential Development</h3>
-                        <p>450,000 m³ cut and fill</p>
+                        <span>Al-Khiran Residential Development<br>450,000 m³ cut and fill</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="earthworks">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=400&width=600" alt="Road Construction">
                     <div class="gallery-overlay">
-                        <h3>Jahra Ring Road Extension</h3>
-                        <p>12 km road construction</p>
+                        <span>Jahra Ring Road Extension<br>12 km road construction</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="earthworks">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=400&width=600" alt="Industrial Site">
                     <div class="gallery-overlay">
-                        <h3>Shuaiba Industrial Park</h3>
-                        <p>Foundation preparation</p>
+                        <span>Shuaiba Industrial Park<br>Foundation preparation</span>
                     </div>
                 </div>
-                <div class="gallery-item" data-category="earthworks">
+                <div class="gallery-item">
                     <img src="/placeholder.svg?height=400&width=600" alt="Drainage Installation">
                     <div class="gallery-overlay">
-                        <h3>Sabah Al-Ahmad Drainage</h3>
-                        <p>Complete utility network</p>
+                        <span>Sabah Al-Ahmad Drainage<br>Complete utility network</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section testimonials">
+    <!-- Testimonials Section -->
+    <section class="section section-gray">
         <div class="container">
-            <h2>Client Testimonials</h2>
+            <div class="text-center">
+                <h2 class="section-title">Client Testimonials</h2>
+            </div>
             <div class="testimonials-slider">
-                <div class="testimonial-slide">
-                    <img src="/placeholder.svg?height=100&width=100" alt="Client" class="testimonial-image">
-                    <p class="testimonial-text">"ATLAS International completed our 300,000 m³ earthworks project ahead of schedule and within budget. Their modern equipment and skilled operators delivered exceptional quality."</p>
-                    <p class="testimonial-author">Eng. Mohammed Al-Rashidi</p>
-                    <p class="testimonial-position">Project Director, Kuwait Development Authority</p>
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"ATLAS International completed our 300,000 m³ earthworks project ahead of schedule and within budget. Their modern equipment and skilled operators delivered exceptional quality."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Mohammed Al-Rashidi">
+                        <div>
+                            <h4>Eng. Mohammed Al-Rashidi</h4>
+                            <p>Project Director, Kuwait Development Authority</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-slide">
-                    <img src="/placeholder.svg?height=100&width=100" alt="Client" class="testimonial-image">
-                    <p class="testimonial-text">"The precision grading and compaction work by ATLAS was outstanding. Their attention to detail and quality control ensured perfect foundation conditions for our industrial facility."</p>
-                    <p class="testimonial-author">Fahad Al-Mutairi</p>
-                    <p class="testimonial-position">Construction Manager, Shuaiba Industries</p>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The precision grading and compaction work by ATLAS was outstanding. Their attention to detail and quality control ensured perfect foundation conditions for our industrial facility."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Fahad Al-Mutairi">
+                        <div>
+                            <h4>Fahad Al-Mutairi</h4>
+                            <p>Construction Manager, Shuaiba Industries</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev">&lt;</button>
+                <button class="testimonial-next">&gt;</button>
             </div>
         </div>
     </section>
 
-    <section class="section cta-section">
-        <div class="container">
+    <!-- CTA Section -->
+    <section class="cta-banner" style="background-image: url('/placeholder.svg?height=400&width=1920');">
+        <div class="hero-overlay"></div>
+        <div class="container cta-content">
             <h2>Need Expert Earthworks Services?</h2>
             <p>Contact us today to discuss your infrastructure development requirements</p>
-            <div class="cta-buttons">
-                <a href="../quote.html" class="btn btn-primary">Request Quote</a>
-                <a href="../contact.html" class="btn btn-secondary">Contact Us</a>
+            <div class="hero-buttons">
+                <a href="./quote.html" class="btn-cta-large">Request Quote</a>
+                <a href="./contact.html" class="btn btn-secondary">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <section class="section bg-light related-services">
+    <!-- Related Services Section -->
+    <section class="section">
         <div class="container">
-            <h2>Related Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Infrastructure Development">
+            <div class="text-center">
+                <h2 class="section-title">Related Services</h2>
+            </div>
+            <div class="related-services-grid">
+                <div class="related-service-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Infrastructure Development">
                     <h3>Infrastructure Development</h3>
                     <p>Complete infrastructure solutions including roads, utilities, and site development.</p>
-                    <a href="infrastructure.html" class="btn btn-outline">Learn More</a>
+                    <a href="./infrastructure.html" class="btn-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Landscaping">
+                <div class="related-service-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Landscaping">
                     <h3>Landscaping & External Works</h3>
                     <p>Professional landscaping and site finishing services for completed developments.</p>
-                    <a href="landscaping-external.html" class="btn btn-outline">Learn More</a>
+                    <a href="./landscaping.html" class="btn-link">Learn More →</a>
                 </div>
-                <div class="service-card">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Equipment Rental">
+                <div class="related-service-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Equipment Rental">
                     <h3>Equipment Rental</h3>
                     <p>Rent our modern earthmoving equipment with or without skilled operators.</p>
-                    <a href="equipment-rental.html" class="btn btn-outline">Learn More</a>
+                    <a href="./equipment-rental.html" class="btn-link">Learn More →</a>
                 </div>
             </div>
         </div>
     </section>
 
-     <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -310,29 +364,28 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services/dredging-reclamation.html">Dredging & Reclamation</a></li>
-                        <li><a href="services/marine-construction.html">Marine Construction</a></li>
-                        <li><a href="services/infrastructure-earthworks.html">Infrastructure & Earthworks</a></li>
-                        <li><a href="services/oil-gas-services.html">Oil & Gas Services</a></li>
+                        <li><a href="./dredging-reclamation.html">Dredging & Reclamation</a></li>
+                        <li><a href="./marine-construction.html">Marine Construction</a></li>
+                        <li><a href="./infrastructure.html">Infrastructure & Earthworks</a></li>
+                        <li><a href="./oil-gas-services.html">Oil & Gas Services</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Info</h4>
                     <ul class="contact-info">
-                        <li>📍 Office Number 35, Flat 6 , Corniche Building, Abudhabi</li>
+                        <li>📍 Office Number 35, Flat 6, Corniche Building, Abudhabi</li>
                         <li>📞 +971 50 445 3937</li>
                         <li>✉️ info@atlas-international.ae</li>
-                        <!-- <li>🕐 Sun-Thu: 8AM - 6PM</li> -->
                     </ul>
                 </div>
             </div>
@@ -342,14 +395,14 @@
         </div>
     </footer>
 
-
-    <div class="lightbox" id="lightbox">
+    <!-- Lightbox Modal -->
+    <div class="lightbox">
         <button class="lightbox-close">&times;</button>
-        <img src="/placeholder.svg" alt="Lightbox Image" class="lightbox-image">
-        <button class="lightbox-btn lightbox-prev">‹</button>
-        <button class="lightbox-btn lightbox-next">›</button>
+        <button class="lightbox-prev">&lt;</button>
+        <button class="lightbox-next">&gt;</button>
+        <img src="" alt="Lightbox Image">
     </div>
 
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
