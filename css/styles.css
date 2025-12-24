@@ -335,6 +335,17 @@ body {
   margin-bottom: 1rem;
   font-weight: bold;
 }
+.social-icons i {
+    font-size: 22px;
+    margin-right: 16px;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #f1bd00; /* your brand color */
+}
+
 
 .section-subtitle {
   font-size: 1.2rem;
